@@ -25,6 +25,9 @@ body {
     box-shadow: #fc0c8480 5px 5px;
 }
 
+
+
+
 .buttons {
     padding: 20px;
     display: flex;
@@ -49,6 +52,17 @@ p {
 .button-yes,
 .button-no {
     padding: 25px 100px;
+
+    color: #9c014e;
+    background-color: #ff53a9;
+    border: #9c014e 2px solid;
+    border-radius: 20px;
+
+    cursor: pointer;
+}
+
+.button-again {
+    padding: 15px 50px;
 
     color: #9c014e;
     background-color: #ff53a9;

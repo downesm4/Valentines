@@ -3,17 +3,25 @@ noButton.addEventListener('click', noClicked);
 const container = document.querySelector('.question');
 const yesButton = document.querySelector('.button-yes');
 yesButton.addEventListener('click', yesClicked);
-
+const againButton = document.querySelector('.button-again');
+againButton.addEventListener('click', againClicked);
 
 function yesClicked() {
     document.querySelector('.yes').style.display = 'block';
     document.querySelector('.question-container').style.display = 'none';
 }
 
+function againClicked() {
+    document.querySelector('.yes').style.display = 'none';
+    document.querySelector('.question-container').style.display = 'block';
+}
+
+
 function noClicked() {
     alert('This is not an option, please reconsider! ❤️');
     noButton.style.transform = `translate(0px, 0px)`;
 }
+
 
 
 noButton.addEventListener('mouseover', () => {
